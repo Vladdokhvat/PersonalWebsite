@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title> Vlad Dokhvat - Contact</title>
+	<link href = "../css/contact.css" rel = "stylesheet"> 	
+	<link rel = "icon" href="../img/VDlogoTran2.png">
+</head>
+<body>
+	<div class = "container">
+		<div class = "header">
+			<div class = "HeaderMain">
+				<a href = "../index.html"><img class = "logo" src = "../img/logoN.png"></a>
+				<div class = "links">
+					<a target="_blank" href = "https://www.instagram.com/vladdokhvat/"><img src = "../img/insta.png" height = 40px width = 40px></a>
+					<a target="_blank" href = "https://twitter.com/VladDokhvat"><img src = "../img/twitter.png" height = 40px width = 40px></a>
+					<a target="_blank" href = "https://www.youtube.com/channel/UCcGFLtgkj2hyK3b0n9K8URA"><img src = "../img/youtube.png" height = 40px width = 40px></a>
+					<a target="_blank" href = "https://www.linkedin.com/in/vladyslav-dokhvat-a16b6710a?trk=nav_responsive_tab_profile"><img src = "../img/link.png" height = 40px width = 40px></a>
+				</div>	
+			</div>
+			<div class = "HeaderNav">
+				<ul>
+					<li><a href = "../index.html">Home</a></li>
+					<li><a href = "about.html">About</a></li>
+					<li><a href = "work.html">Work</a></li>
+					<li><a href = "contact.html" class = "active">Contact</a></li>
+				</ul>
+			</div>
+			<div class = "banner-contact">
+				<img src = "../img/contact-banner.jpg" height = 100% width = 100%>
+			</div>	
+		</div>
+		<section id="hire">
+    <h1>Contact Me</h1>
+    
+    <form>
+	      <div class="field name-box">
+		        <input type="text" id="name" placeholder="Who Are You?"/>
+        		<label for="name">Name</label>
+		        <span class="ss-icon">check</span>
+	      </div>
+
+	      <div class="field email-box">
+		        <input type="text" id="email" placeholder="name@email.com"/>
+		        <label for="email">Email</label>
+		        <span class="ss-icon">check</span>
+	      </div>
+
+	      <div class="field msg-box">
+		        <textarea id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
+		        <label for="msg">Msg</label>
+		        <span class="ss-icon">check</span>
+	      </div>
+
+	      <input class="button" type="submit" value="Send" />
+	<h1 id = "con-or">Or</h1>
+	<h1 id = "send-email">Contact me by sending a direct message to my email.</h1>
+	<a href = "mailto:vladdokhvat@gmail.com" id = "email-button">Send Email</a>
+  </form>
+</section>
+	</div>
+	<div class = "footer">
+		<div class = "container">
+			<div class = "copyright">
+				<p>Copyright&copy; belongs to Vlad Dokhvat. All rights reserved.
+			</div>	
+			<div class = "footer-links">	
+				<ul>
+					<li><a href = "../index.html">Home</a></li>
+					<li><a href = "about.html">About</a></li>
+					<li><a href = "work.html">Work</a></li>
+					<li><a href = "contact.html">Contact</a></li>
+				</ul>
+			</div>	
+		</div>	
+	</div>
+
+	<script>
+		// Input Lock
+$('textarea').blur(function () {
+    $('#hire textarea').each(function () {
+        $this = $(this);
+        if ( this.value != '' ) {
+          $this.addClass('focused');
+          $('textarea + label + span').css({'opacity': 1});
+        }
+        else {
+          $this.removeClass('focused');
+          $('textarea + label + span').css({'opacity': 0});
+        }
+    });
+});
+
+$('#hire .field:first-child input').blur(function () {
+    $('#hire .field:first-child input').each(function () {
+        $this = $(this);
+        if ( this.value != '' ) {
+          $this.addClass('focused');
+          $('.field:first-child input + label + span').css({'opacity': 1});
+        }
+        else {
+          $this.removeClass('focused');
+          $('.field:first-child input + label + span').css({'opacity': 0});
+        }
+    });
+});
+
+$('#hire .field:nth-child(2) input').blur(function () {
+    $('#hire .field:nth-child(2) input').each(function () {
+        $this = $(this);
+        if ( this.value != '' ) {
+          $this.addClass('focused');
+          $('.field:nth-child(2) input + label + span').css({'opacity': 1});
+        }
+        else {
+          $this.removeClass('focused');
+          $('.field:nth-child(2) input + label + span').css({'opacity': 0});
+        }
+    });
+});
+	</script>
+
+</body>
+</html>	

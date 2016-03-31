@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title> Vlad Dokhvat - Todd's Wedding</title>
+	<link href = "../css/work.css" rel = "stylesheet"> 	
+	<link rel = "icon" href="../img/VDlogoTran2.png">
+</head>
+<body>
+	<div class = "container">
+		<div class = "header">
+			<div class = "HeaderMain">
+				<a href = "../index.html"><img class = "logo" src = "../img/logoN.png"></a>
+				<div class = "links">
+					<a target="_blank" href = "https://www.instagram.com/vladdokhvat/"><img src = "../img/insta.png" height = 40px width = 40px></a>
+					<a target="_blank" href = "https://twitter.com/VladDokhvat"><img src = "../img/twitter.png" height = 40px width = 40px></a>
+					<a target="_blank" href = "https://www.youtube.com/channel/UCcGFLtgkj2hyK3b0n9K8URA"><img src = "../img/youtube.png" height = 40px width = 40px></a>
+					<a target="_blank" href = "https://www.linkedin.com/in/vladyslav-dokhvat-a16b6710a?trk=nav_responsive_tab_profile"><img src = "../img/link.png" height = 40px width = 40px></a>
+				</div>	
+			</div>
+			<div class = "HeaderNav">
+				<ul>
+					<li><a href = "../index.html">Home</a></li><li>
+					<a href = "about.html">About</a></li><li>
+					<a href = "work.html" class = "active">Work</a>
+					<li><a href = "contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<br>
+		<div class="diy-slideshow">
+			<figure class="show">
+				<img src="../img/wedding/wed3.jpg" width="100%" /><figcaption>"Todd's Wedding" by:<a target="_blank" href="https://www.instagram.com/vladdokhvat/">Me</a>.</figcaption> 
+			</figure>
+ 			 <figure>
+    			<img src="../img/wedding/wed.jpg" width="100%" /><figcaption>"Todd's Wedding" by:<a target="_blank" href="https://www.instagram.com/vladdokhvat/">Me</a>.</figcaption> 
+			</figure>
+			<figure>
+				<img src="../img/wedding/wed2.jpg" width="100%" /><figcaption>Todd's Wedding" by:<a target="_blank" href="https://www.instagram.com/vladdokhvat/">Me</a>.</figcaption> 
+			</figure>
+			<span class="prev">&laquo;</span>
+  			<span class="next">&raquo;</span>
+		</div> 	
+		<div class="work-title">
+			<h1>Jenna & Jesse<h1>
+			<p> Very, very few pictures from the wedding of Jenna and Jesse Todd. Very fun first experiance of such a big phootoshoot.  </p>
+		</div>		
+	</div>
+
+<div class = "footer">
+		<div class = "container">
+			<div class = "copyright">
+				<p>Copyright&copy; belongs to Vlad Dokhvat. All rights reserved.
+			</div>	
+			<div class = "footer-links">	
+				<ul>
+					<li><a href = "../index.html">Home</a></li>
+					<li><a href = "about.html">About</a></li>
+					<li><a href = "work.html">Work</a></li>
+					<li><a href = "contact.html">Contact</a></li>
+				</ul>
+			</div>	
+		</div>	
+	</div>
+
+
+
+		<script>
+			(function(){
+  
+var counter = 0, // to keep track of current slide
+    $items = document.querySelectorAll('.diy-slideshow figure'), // a collection of all of the slides, caching for performance
+    numItems = $items.length; // total number of slides
+
+// this function is what cycles the slides, showing the next or previous slide and hiding all the others
+var showCurrent = function(){
+  var itemToShow = Math.abs(counter%numItems);// uses remainder (aka modulo) operator to get the actual index of the element to show  
+  
+  // remove .show from whichever element currently has it 
+  // http://stackoverflow.com/a/16053538/2006057
+  [].forEach.call( $items, function(el){
+    el.classList.remove('show');
+  });
+  
+  // add .show to the one item that's supposed to have it
+  $items[itemToShow].classList.add('show');    
+};
+
+// add click events to prev & next buttons 
+document.querySelector('.next').addEventListener('click', function() {
+     counter++;
+     showCurrent();
+  }, false);
+
+document.querySelector('.prev').addEventListener('click', function() {
+     counter--;
+     showCurrent();
+  }, false);
+  
+})(); 
+		</script>
+</body>
+</html>	

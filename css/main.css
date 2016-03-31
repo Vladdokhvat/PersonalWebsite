@@ -1,0 +1,223 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.container{
+	margin: 0 auto;
+	width: 940px;
+}
+
+.HeaderMain{
+	border-bottom: 1px solid #dadada;
+	padding: 30px 0px;
+}
+
+.links{
+	float: right;
+	padding-top: 10px;
+}
+
+.links a{
+	padding-left: 10px;
+}
+
+.HeaderNav ul{
+	list-style: none;
+}
+
+.HeaderNav ul li{
+	float: left;
+	margin: 20px 0px;
+	margin-right: 29px;
+	font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+}
+
+.HeaderNav ul li a{
+	color: #737373;
+	text-decoration: none;	
+	font-size: 18px;
+}
+
+.HeaderNav ul li a.active{
+	color: #8aefd2;
+}
+
+.HeaderNav ul li a:hover{
+	color: #8aefd2;
+}
+
+.banner{
+	margin: 60px 0px;
+	background-color: #8aefd2;
+	background-image: url('../img/sunb.png');
+	background-repeat: no-repeat;
+	background-position: center; 
+	height: 525px;
+}
+
+.banner img{
+	margin: 110px auto 0 auto;
+	margin-bottom: 50px;
+	/* did -30px so the selfie is more centered looking! */
+	margin-left: -60px;
+}
+
+.intro-text{
+	margin: 100px auto 0 auto;
+	font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+	width: 750px;
+	font-size: 18px;
+}
+
+.intro-text{
+	text-align: center;
+	color: #737373;
+	margin-bottom: 40px;
+}
+
+.button{
+	background-color: #8aefd2;
+	color: white;
+	padding: 16px 18px;
+	text-decoration: none;
+	margin-top: 30px;
+	display: inline-block;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.intro-text a:hover{
+	box-shadow: 5px 5px 3px #888888;
+	background-color: #f69160;
+}
+
+.info1{
+	margin: 0px 0;
+	background-color: #efefef;
+	height: 350px;
+	margin-bottom: 50px;
+}
+
+.info-text1{
+	float: left;
+	margin-top: 30px;
+	margin-left: 30px;
+	color: #737373;
+	font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+	line-height: 150%;
+	width: 550px;
+}
+
+.info-text1 a{
+	background-color: #8aefd2;
+	color: white;
+	padding: 16px 18px;
+	text-decoration: none;
+	margin: 30px 150px;
+	display: inline-block;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.info-text1 a:hover{
+	box-shadow: 5px 5px 3px #888888;
+	background-color: #f69160;
+}
+
+
+.camera{
+	margin-top: 20px;
+	float: right;
+}
+
+.info2{
+	margin: 0px 0;
+	background-color: #efefef;
+	height: 350px;
+	margin-bottom: 50px;
+}
+
+.info-text2{
+	float: left;
+	margin-top: 30px;
+	margin-left: 30px;
+	color: #737373;
+	font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+	line-height: 150%;
+	width: 550px;
+}
+
+.info-text2 a{
+	background-color: #8aefd2;
+	color: white;
+	padding: 16px 18px;
+	text-decoration: none;
+	margin: 30px 150px;
+	display: inline-block;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.info-text2 a:hover{
+	box-shadow: 5px 5px 3px #888888;
+	background-color: #f69160;
+}
+
+.web{
+	margin-top: 25px;
+	margin-left: 10px;
+	float: left;
+}
+
+.footer{
+	margin: 0px 0;
+	background-color: #8c8c8c;
+	height: 62px;
+}
+
+.footer-links ul{
+	list-style: none;
+	float: right;
+}
+
+.footer-links ul li{
+	float: left;
+	margin: 20px 0px;
+	margin-right: 29px;
+	font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+}
+
+.footer-links ul li a{
+	color: #efefef;
+	text-decoration: none;	
+	font-size: 14px;
+}
+
+.copyright{
+	float: left;
+	margin: 20px 0px;
+	color: #efefef;
+	font-size: 14px;
+	font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+}
+
+.name-about{
+	text-align: center;
+	margin: 20px auto 0px auto;
+	color: #202020;
+	font-family: "Courier New", Courier, monospace
+}
+
+.banner-about{
+	border-bottom: 1px solid #dadada;
+	padding: 30px 0px;
+}
+
+.about-me{
+	text-align: center;
+	margin: 40px auto 0px auto;
+	color: #202020;
+	font-family: "Courier New", Courier, monospace;
+	width: 720px;
+	margin-bottom: 80px;
+}
+
+
