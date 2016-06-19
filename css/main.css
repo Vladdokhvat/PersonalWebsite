@@ -8,6 +8,7 @@
 	width: 940px;
 }
 
+
 .HeaderMain{
 	border-bottom: 1px solid #dadada;
 	padding: 30px 0px;
@@ -48,7 +49,7 @@
 }
 
 .banner{
-	margin: 60px 0px;
+	margin: 60px auto 0px auto;
 	background-color: #8aefd2;
 	background-image: url('../img/sunb.png');
 	background-repeat: no-repeat;
@@ -63,11 +64,14 @@
 	margin-left: -60px;
 }
 
+
 .intro-text{
 	margin: 100px auto 0 auto;
 	font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
-	width: 750px;
+	max-width: 750px;
 	font-size: 18px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .intro-text{
@@ -83,7 +87,7 @@
 	text-decoration: none;
 	margin-top: 30px;
 	display: inline-block;
-	border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;		
 }
 
 .intro-text a:hover{
@@ -92,10 +96,27 @@
 }
 
 .info1{
-	margin: 0px 0;
 	background-color: #efefef;
-	height: 350px;
+	min-height: 350px;
 	margin-bottom: 50px;
+}
+
+.camera
+	margin: 20px auto 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+@media only screen and (max-width:920px){
+	.info1{
+	height: 650px;
+}
+
+.camera{
+	width: 100%;
+	height: 100%;
+}
+
 }
 
 .info-text1{
@@ -105,7 +126,8 @@
 	color: #737373;
 	font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
 	line-height: 150%;
-	width: 550px;
+	max-width: 550px;
+	display: inline-block;
 }
 
 .info-text1 a{
@@ -206,6 +228,10 @@
 	font-family: "Courier New", Courier, monospace
 }
 
+.name-about h4{
+	margin: 0 auto 0 auto;
+}
+
 .banner-about{
 	border-bottom: 1px solid #dadada;
 	padding: 30px 0px;
@@ -216,8 +242,10 @@
 	margin: 40px auto 0px auto;
 	color: #202020;
 	font-family: "Courier New", Courier, monospace;
-	width: 720px;
+	max-width: 720px;
 	margin-bottom: 80px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 
